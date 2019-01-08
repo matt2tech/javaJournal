@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 import java.io.FileWriter;
+//Co-authored-by: Myeisha
 
 class Program {
     private static Scanner scanner;
