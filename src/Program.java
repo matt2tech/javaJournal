@@ -13,7 +13,8 @@ class Program {
         scanner = new Scanner(System.in);
         FileWriter fw = new FileWriter("/home/basecamp/backendIntro/week_04/javaJournal/src/entries/journal.txt", true);
         PrintWriter writer = new PrintWriter(fw);
-        writer.println(journal());
+        writer.print("-START OF ENTRY-\n" + journal() + "-END OF ENTRY-");
+        writer.println();
         writer.close();
     }
 
@@ -34,7 +35,6 @@ class Program {
     }
 
     private static String journal() {
-        System.out.println();
         return String.format("%s\n%s\n\n%s\n", name(), timeStamp(), entry());
     }
 }
